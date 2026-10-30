@@ -3,9 +3,9 @@
 # Serveur local : doit être démarré sur http://localhost:20128
 
 llm:
-  provider: "omniroute"
-  base_url: "http://localhost:20128/v1"
-  api_key: "sk-7be7f176e2157954-2205ac-670eb09b"
+  provider: ""
+  base_url: ""
+  api_key: ""
   default_model: "kiro"
   timeout_seconds: 120
   max_retries: 3
