@@ -1,0 +1,167 @@
+[
+  {
+    "document_id": "MANUEL_ATELIER_PEUGEOT_208_V2",
+    "version": "2.4",
+    "page": 42,
+    "element_id": "figure_42_1_temoins_moteur",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Témoins d'alerte combiné de bord - Voyant Autodiagnostic Moteur (MIL)",
+    "content": "Le témoin autodiagnostic moteur (voyant orange représentant un bloc moteur) s'allume brièvement au contact. S'il clignote ou reste allumé fixe moteur tournant, cela indique un dysfonctionnement majeur du système d'injection, de l'allumage ou du dispositif de dépollution (catalyseur / sonde lambda). Ralentir immédiatement et faire vérifier le véhicule. Risque de destruction du pot catalytique.",
+    "visual_description": "Schéma du voyant moteur orange standard OBD-II situé au centre du combiné digital."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_PEUGEOT_208_V2",
+    "version": "2.4",
+    "page": 43,
+    "element_id": "tableau_43_fusibles_compartiment",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Affectation des fusibles - Boîtier servitude moteur (BSM)",
+    "content": "Fusible F16 (15A, bleu) : Calculateur contrôle moteur et électrovanne de purge canister. Fusible F17 (10A, rouge) : Sonde lambda amont et aval, débitmètre d'air massique. Fusible F21 (30A, vert) : Pompe à carburant haute pression.",
+    "visual_description": "Schéma d'implantation des fusibles dans le compartiment moteur sous capot avant gauche."
+  },
+  {
+    "document_id": "GUIDE_TECHNIQUE_FREINAGE_BOSCH_2023",
+    "version": "1.1",
+    "page": 18,
+    "element_id": "figure_18_2_epaisseur_plaquettes",
+    "equipment_family": "systeme_freinage_liaisons_au_sol",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Cotes d'usure admissible des garnitures de frein à disque avant",
+    "content": "L'épaisseur minimale admissible de la garniture de plaquette de frein avant est de 2,0 mm (hors support métallique). En deçà de cette valeur, un remplacement immédiat du jeu de plaquettes avant est impératif pour éviter le contact métal sur métal et le rayage irréversible du disque de frein. Épaisseur nominale neuve : 12,0 mm.",
+    "visual_description": "Illustration technique montrant un pied à coulisse mesurant l'épaisseur résiduelle de garniture sur étrier flottant."
+  },
+  {
+    "document_id": "GUIDE_TECHNIQUE_FREINAGE_BOSCH_2023",
+    "version": "1.1",
+    "page": 24,
+    "element_id": "figure_24_1_temoin_liquide_frein",
+    "equipment_family": "systeme_freinage_liaisons_au_sol",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Témoin de niveau de liquide de frein et anomalie répartiteur (REF)",
+    "content": "Le témoin rouge composé d'un cercle avec point d'exclamation entre parenthèses ((!)) indique une baisse critique du niveau de liquide de frein dans le bocal ou une défaillance du répartiteur électronique de freinage. Arrêt impératif. Vérifier l'absence de fuite sur les flexibles et les étriers.",
+    "visual_description": "Pictogramme rouge représentant un cercle avec point d'exclamation au centre encadré de deux segments arqués."
+  },
+  {
+    "document_id": "MANUEL_CITROEN_C3_BLUEHDI",
+    "version": "3.0",
+    "page": 65,
+    "element_id": "figure_65_filtre_fap_adblue",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Système de dépollution SCR et voyant d'alerte UREA",
+    "content": "Le voyant UREA fixe accompagné du témoin Service indique une autonomie en liquide AdBlue inférieure à 2400 km. Si le voyant UREA clignote avec le témoin Stop, l'autonomie est inférieure à 600 km ou un défaut du système antipollution SCR empêchera le redémarrage après coupure.",
+    "visual_description": "Schéma du combiné d'instruments avec affichage du sigle UREA et décompte kilométrique restant."
+  },
+  {
+    "document_id": "PROCEDURE_SECURITE_ATELIER_CONFIDENTIEL",
+    "version": "1.0",
+    "page": 5,
+    "element_id": "paragraphe_5_habilitation_haute_tension",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_expert", "admin"],
+    "title": "Consignation et intervention sur circuit haute tension électrique 400V",
+    "content": "Toute intervention sur véhicule hybride ou électrique nécessite l'habilitation B2VL / BCL. Débrancher la prise de service manuel (Manual Service Disconnect - MSD) avec gants isolants classe 0 (1000V). Attendre 10 minutes la décharge des condensateurs avant toute mesure.",
+    "visual_description": "Procédure d'extraction de la prise de consignation MSD orange."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_PEUGEOT_208_V2",
+    "version": "2.4",
+    "page": 50,
+    "element_id": "figure_50_temoin_batterie",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Témoin d'alerte de charge batterie et circuit alternateur",
+    "content": "Le témoin rouge représentant une batterie avec bornes + et - signale un défaut de charge : alternateur défaillant, courroie d'accessoire détendue ou rompue, ou batterie en court-circuit. Arrêter les consommateurs électriques non essentiels (climatisation, dégivrage). Risque d'arrêt brutal du moteur par décharge complète.",
+    "visual_description": "Pictogramme rouge représentant une batterie rectangulaire avec bornes positive et négative."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_PEUGEOT_208_V2",
+    "version": "2.4",
+    "page": 52,
+    "element_id": "figure_52_temoin_surchauffe_moteur",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Témoin de température maximale de liquide de refroidissement (Surchauffe)",
+    "content": "Le témoin rouge de thermomètre plongeant dans des vagues indique que la température du liquide de refroidissement dépasse 118°C. Arrêt immédiat obligatoire du véhicule. Couper le contact après 1 minute de ralenti. Ne jamais ouvrir le vase d'expansion à chaud (risque grave de brûlures). Contrôler le niveau de LDR à froid et le moto-ventilateur.",
+    "visual_description": "Pictogramme rouge représentant un thermomètre au-dessus de deux lignes ondulées horizontales."
+  },
+  {
+    "document_id": "MANUEL_CITROEN_C3_BLUEHDI",
+    "version": "3.0",
+    "page": 78,
+    "element_id": "figure_78_temoin_sous_gonflage_tpms",
+    "equipment_family": "systeme_freinage_liaisons_au_sol",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Système de détection de sous-gonflage des pneumatiques (TPMS)",
+    "content": "Le témoin orange représentant une coupe de pneu avec point d'exclamation signale une perte de pression d'au moins 20% sur l'un des pneumatiques. Contrôler et ajuster la pression des 4 pneus à froid selon les préconisations inscrites sur l'étiquette de portière conducteur. Réinitialiser ensuite le système TPMS via l'écran tactile du véhicule.",
+    "visual_description": "Pictogramme orange en forme de coupe de pneu aplati avec point d'exclamation au centre."
+  },
+  {
+    "document_id": "GUIDE_TECHNIQUE_FREINAGE_BOSCH_2023",
+    "version": "1.1",
+    "page": 30,
+    "element_id": "figure_30_temoin_antiblocage_abs",
+    "equipment_family": "systeme_freinage_liaisons_au_sol",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Témoin d'anomalie du système antiblocage des roues (ABS)",
+    "content": "Le témoin orange avec la mention ABS allumé en continu indique la mise hors service de la régulation antiblocage. Le véhicule conserve un freinage hydraulique conventionnel, mais les roues risquent de se bloquer en cas de freinage d'urgence sur chaussée glissante. Causes fréquentes : encrassement d'une cible magnétique de roulement ou défaillance d'un capteur de vitesse de roue.",
+    "visual_description": "Pictogramme orange circulaire avec inscription ABS au centre."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_AUDI_A3_2022",
+    "version": "1.0",
+    "page": 88,
+    "element_id": "figure_88_audi_virtual_cockpit_tpms",
+    "equipment_family": "systeme_freinage_liaisons_au_sol",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Audi Virtual Cockpit - Indicateur de perte de pression des pneumatiques (TPMS)",
+    "content": "Sur Audi A3 / A4, l'allumage du témoin jaune TPMS signale une baisse de pression. Ajuster la pression des 4 pneus à froid selon les valeurs constructeur sur le montant de porte conducteur. Valider ensuite le réapprentissage via le menu MMI : Réglages Véhicule > Entretien & Contrôle > Contrôle pression des pneus > Mémoriser.",
+    "visual_description": "Pictogramme jaune TPMS avec profil de pneu affiché au centre de l'Audi Virtual Cockpit digital."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_MERCEDES_CLASSE_A_W177",
+    "version": "2.1",
+    "page": 112,
+    "element_id": "figure_112_mbux_temoin_freinage",
+    "equipment_family": "systeme_freinage_liaisons_au_sol",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Combiné d'instruments Widescreen MBUX - Témoin d'usure des garnitures de frein",
+    "content": "Le message d'alerte rouge 'Garniture de frein usée' sur combiné Mercedes Widescreen indique l'atteinte du contacteur d'usure sur l'étrier avant. Remplacement impératif du jeu de plaquettes et des contacteurs d'usure témoins. Cote d'usure minimale résiduelle autorisée : 2,0 mm.",
+    "visual_description": "Affichage digital Mercedes MBUX montrant le cercle rouge avec garnitures en tirets."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_BMW_SERIE3_G20",
+    "version": "1.4",
+    "page": 95,
+    "element_id": "figure_95_bmw_idrive_surchauffe",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "BMW Live Cockpit Professional - Alerte surchauffe liquide de refroidissement",
+    "content": "Le témoin rouge de thermomètre avec message Check Control 'Température moteur trop élevée' signale un dépassement de 115°C sur moteur B47 / B48. Arrêt immédiat sécurisé obligatoire. Ne pas ouvrir le bouchon du vase de compensation sous pression. Vérifier fonctionnement du moto-ventilateur électrique 850W.",
+    "visual_description": "Pictogramme rouge de thermomètre au combiné d'instruments digital BMW Live Cockpit."
+  },
+  {
+    "document_id": "MANUEL_ATELIER_VOLKSWAGEN_GOLF8_2022",
+    "version": "2.0",
+    "page": 62,
+    "element_id": "figure_62_vw_digital_cockpit_batterie",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_standard", "groupe_expert"],
+    "title": "Volkswagen Digital Cockpit Pro - Témoin alerte batterie 12V et circuit 48V eTSI",
+    "content": "Le témoin rouge batterie avec mention 'Défaut système électrique 12V / 48V' indique un défaut de l'alterno-démarreur entraîné par courroie (RSG) ou du convertisseur continu/continu DC/DC. Arrêter immédiatement les consommateurs électriques auxiliaires. Risque d'immobilisation complète du véhicule.",
+    "visual_description": "Pictogramme rouge batterie rectangulaire avec bornes + et - sur Volkswagen Digital Cockpit."
+  },
+  {
+    "document_id": "MANUEL_MAINTENANCE_TESLA_MODEL_3",
+    "version": "4.2",
+    "page": 104,
+    "element_id": "figure_104_tesla_consignation_haute_tension",
+    "equipment_family": "groupe_motopropulseur_electronique",
+    "authorized_groups": ["groupe_expert", "admin"],
+    "title": "Consignation Pack Batterie Haute Tension 400V et boucle coupe-circuit pompier",
+    "content": "Toute intervention sur Tesla Model 3 nécessite la coupure de la boucle basse tension de premiers secours (First Responder Cut Loop) située sous le capot avant gauche. Débrancher ensuite la batterie 12V auxiliaire. Port d'EPI haute tension classe 0 (1000V) obligatoire. Attendre 5 minutes la décharge des contacteurs de pyrofusible.",
+    "visual_description": "Schéma technique de localisation de la boucle de coupe-circuit pompier orange haute tension."
+  }
+]

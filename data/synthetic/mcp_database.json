@@ -1,0 +1,328 @@
+{
+  "vehicles": {
+    "VF3CC8HR0ES123456": {
+      "vin": "VF3CC8HR0ES123456",
+      "brand": "Peugeot",
+      "model": "Peugeot 208 1.2 PureTech",
+      "year": 2021,
+      "mileage_km": 48500,
+      "owner": "Flotte Alpha Location",
+      "engine": "1.2 PureTech 110ch",
+      "fuel_type": "Essence",
+      "transmission": "Manuelle 5 rapports",
+      "history": [
+        {"date": "2023-11-15", "mileage_km": 35000, "intervention": "Entretien annuel complet : vidange huile moteur 0W20, remplacement filtre à huile et filtre d'habitacle.", "technician_id": "TECH_04"},
+        {"date": "2024-04-10", "mileage_km": 42000, "intervention": "Contrôle géométrie train avant suite à signalement tirage à droite. Réglage parallélisme effectué.", "technician_id": "TECH_12"}
+      ],
+      "open_claims": [
+        {"claim_id": "CLM-2024-089", "created_at": "2024-10-01", "status": "in_progress", "title": "Signalement voyant moteur intermittent lors des phases d'accélération", "estimated_cost": 250.0}
+      ]
+    },
+    "VF7SA9HP0DW789012": {
+      "vin": "VF7SA9HP0DW789012",
+      "brand": "Citroën",
+      "model": "Citroën C3 1.5 BlueHDi",
+      "year": 2020,
+      "mileage_km": 87300,
+      "owner": "Flotte Express Messagerie",
+      "engine": "1.5 BlueHDi 100ch",
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle 5 rapports",
+      "history": [
+        {"date": "2023-05-20", "mileage_km": 60000, "intervention": "Remplacement kit distribution et pompe à eau. Remplacement liquide de refroidissement.", "technician_id": "TECH_02"},
+        {"date": "2024-01-18", "mileage_km": 75000, "intervention": "Remplacement disques et plaquettes de frein avant. Purge circuit de liquide de frein DOT4.", "technician_id": "TECH_08"}
+      ],
+      "open_claims": []
+    },
+    "WAUZZZ8V1KA012345": {
+      "vin": "WAUZZZ8V1KA012345",
+      "brand": "Audi",
+      "model": "Audi A3 Sportback 35 TFSI",
+      "year": 2022,
+      "mileage_km": 32000,
+      "owner": "Client Particulier",
+      "engine": "1.5 TFSI 150ch",
+      "fuel_type": "Essence",
+      "transmission": "S-Tronic 7 rapports",
+      "history": [
+        {"date": "2024-02-10", "mileage_km": 25000, "intervention": "Entretien prévue Audi : contrôle freinage, liquide de refroidissement, vidange moteur 5W30.", "technician_id": "TECH_01"}
+      ],
+      "open_claims": []
+    },
+    "W1K1770841J567890": {
+      "vin": "W1K1770841J567890",
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Benz Classe A 200d",
+      "year": 2021,
+      "mileage_km": 64500,
+      "owner": "Flotte Société Delta",
+      "engine": "2.0 d 116ch BlueTEC",
+      "fuel_type": "Diesel",
+      "transmission": "Dual clutch 7 rapports",
+      "history": [
+        {"date": "2023-08-05", "mileage_km": 45000, "intervention": "Entretien Mercedes Service A : remplacement filtre à air, filtre à carburant, vidange huile.", "technician_id": "TECH_03"},
+        {"date": "2024-03-22", "mileage_km": 60000, "intervention": "Contrôle ABS suite à témoin allumé. Remplacement capteur roue avant droit.", "technician_id": "TECH_05"}
+      ],
+      "open_claims": []
+    },
+    "WDD2050861F234567": {
+      "vin": "WDD2050861F234567",
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Benz Classe C 220d",
+      "year": 2020,
+      "mileage_km": 98200,
+      "owner": "Flotte Location Longue Durée",
+      "engine": "2.2 d 194ch BlueTEC",
+      "fuel_type": "Diesel",
+      "transmission": "9G-Tronic 9 rapports",
+      "history": [
+        {"date": "2023-01-12", "mileage_km": 75000, "intervention": "Remplacement kit distribution complet (pompe à eau, tendeur, poulies).", "technician_id": "TECH_02"},
+        {"date": "2023-11-28", "mileage_km": 90000, "intervention": "Entretien Service C : liquide frein DOT 5.1, filtre habitacle, vidange boîte automatique.", "technician_id": "TECH_04"}
+      ],
+      "open_claims": []
+    },
+    "WA1ZZZ8V3MA345678": {
+      "vin": "WA1ZZZ8V3MA345678",
+      "brand": "Audi",
+      "model": "Audi Q2 35 TDI",
+      "year": 2021,
+      "mileage_km": 54000,
+      "owner": "Client Particulier",
+      "engine": "2.0 TDI 150ch",
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle 6 rapports",
+      "history": [
+        {"date": "2024-01-05", "mileage_km": 48000, "intervention": "Contrôle traction 4x4 et différentiels suite à usage hors route week-end.", "technician_id": "TECH_01"}
+      ],
+      "open_claims": []
+    },
+    "WVWZZZ1KZAW123456": {
+      "vin": "WVWZZZ1KZAW123456",
+      "brand": "Volkswagen",
+      "model": "Volkswagen Golf 1.5 TSI",
+      "year": 2022,
+      "mileage_km": 28500,
+      "owner": "Client Particulier",
+      "engine": "1.5 TSI 130ch EVO2",
+      "fuel_type": "Essence",
+      "transmission": "DSG 7 rapports",
+      "history": [
+        {"date": "2024-03-18", "mileage_km": 25000, "intervention": "Entretien Volkswagen Service Basic : vidange moteur, filtre à air, vérification freinage.", "technician_id": "TECH_06"}
+      ],
+      "open_claims": []
+    },
+    "WVWZZZ1KZAW678901": {
+      "vin": "WVWZZZ1KZAW678901",
+      "brand": "Volkswagen",
+      "model": "Volkswagen Passat GTE",
+      "year": 2021,
+      "mileage_km": 42000,
+      "owner": "Client Particulier",
+      "engine": "1.4 TSI + Électrique 204ch",
+      "fuel_type": "Hybride Plug-in",
+      "transmission": "DSG 6 rapports",
+      "history": [
+        {"date": "2023-10-15", "mileage_km": 30000, "intervention": "Contrôle batterie haute tension 312V et système de recharge. Mise à jour logicielle E-Mobility.", "technician_id": "TECH_07"}
+      ],
+      "open_claims": []
+    },
+    "X7XZZZ86DHA901234": {
+      "vin": "X7XZZZ86DHA901234",
+      "brand": "DS Automobiles",
+      "model": "DS 7 Crossback E-Tech 145",
+      "year": 2023,
+      "mileage_km": 15000,
+      "owner": "FlotteLocation Premium",
+      "engine": "1.5 TSI + Électrique 145ch",
+      "fuel_type": "Hybride Plug-in",
+      "transmission": "Automatique E-AT",
+      "history": [
+        {"date": "2024-04-02", "mileage_km": 10000, "intervention": "EntretienDS Service Premium : vérification système 800V, chargeurs, démarreur.", "technician_id": "TECH_08"}
+      ],
+      "open_claims": []
+    },
+    "YL1ZZZ1Y81H234567": {
+      "vin": "YL1ZZZ1Y81H234567",
+      "brand": "Renault",
+      "model": "Renault Mégane e-Tech 160",
+      "year": 2023,
+      "mileage_km": 8500,
+      "owner": "Client Particulier",
+      "engine": "Moteur électrique 160ch",
+      "fuel_type": "Électrique 100% (52 kWh)",
+      "transmission": "Automatique 1 vitesse",
+      "history": [
+        {"date": "2024-02-28", "mileage_km": 5000, "intervention": "Premier entretien électrique : vérification système 400V, batterie state-of-health 98%, chargeurs.", "technician_id": "TECH_09"}
+      ],
+      "open_claims": []
+    },
+    "YL1ZZZ1Y81H789012": {
+      "vin": "YL1ZZZ1Y81H789012",
+      "brand": "Renault",
+      "model": "Renault Captur E-Tech 130",
+      "year": 2022,
+      "mileage_km": 19800,
+      "owner": "Client Particulier",
+      "engine": "1.2 TCE 100ch + Moteur électrique 38ch",
+      "fuel_type": "Hybride Plug-in 1.2 TCE",
+      "transmission": "Automatique E-Tech",
+      "history": [
+        {"date": "2024-01-10", "mileage_km": 15000, "intervention": "Contrôle hybride : cycle batterie, chargeurs, démarreur-générateur ISG.", "technician_id": "TECH_09"}
+      ],
+      "open_claims": []
+    },
+    "W0L0ZZZ2ZNA345678": {
+      "vin": "W0L0ZZZ2ZNA345678",
+      "brand": "Seat",
+      "model": "Seat Arona 1.0 TSI",
+      "year": 2021,
+      "mileage_km": 67500,
+      "owner": "Flotte Location Courte Durée",
+      "engine": "1.0 TSI 115ch",
+      "fuel_type": "Essence",
+      "transmission": "Manuelle 6 rapports",
+      "history": [
+        {"date": "2023-06-20", "mileage_km": 50000, "intervention": "Remplacement plaquettes frein avant suite à usure normale.", "technician_id": "TECH_10"}
+      ],
+      "open_claims": []
+    },
+    "W0L0ZZZ2ZNA789012": {
+      "vin": "W0L0ZZZ2ZNA789012",
+      "brand": "Seat",
+      "model": "Seat León 1.5 TSI",
+      "year": 2022,
+      "mileage_km": 38000,
+      "owner": "Client Particulier",
+      "engine": "1.5 TSI 150ch",
+      "fuel_type": "Essence",
+      "transmission": "DSG 7 rapports",
+      "history": [
+        {"date": "2024-02-15", "mileage_km": 30000, "intervention": "Service Seat : vidange moteur 5W30, filtre à air, vérification électronique.", "technician_id": "TECH_06"}
+      ],
+      "open_claims": []
+    },
+    "W0V0ZZZ2ZNA234567": {
+      "vin": "W0V0ZZZ2ZNA234567",
+      "brand": "Škoda",
+      "model": "Škoda Scala 1.5 TSI",
+      "year": 2023,
+      "mileage_km": 12500,
+      "owner": "Client Particulier",
+      "engine": "1.5 TSI 150ch",
+      "fuel_type": "Essence",
+      "transmission": "Manuelle 6 rapports",
+      "history": [
+        {"date": "2024-03-05", "mileage_km": 10000, "intervention": "Entretien Škoda : vidange 5W30, filtre habitacle, vérification freinage.", "technician_id": "TECH_06"}
+      ],
+      "open_claims": []
+    },
+    "WVWZZZ3CZAW456789": {
+      "vin": "WVWZZZ3CZAW456789",
+      "brand": "Volkswagen",
+      "model": "Volkswagen Polo 1.0 TSI",
+      "year": 2022,
+      "mileage_km": 45000,
+      "owner": "Client Particulier",
+      "engine": "1.0 TSI 95ch",
+      "fuel_type": "Essence",
+      "transmission": "Manuelle 5 rapports",
+      "history": [
+        {"date": "2024-01-18", "mileage_km": 40000, "intervention": "Entretien Volkswagen Basic : vidange moteur, filtre à air, vérification pneus.", "technician_id": "TECH_06"}
+      ],
+      "open_claims": []
+    },
+    "WDD2040321B123456": {
+      "vin": "WDD2040321B123456",
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Benz Classe A 180",
+      "year": 2020,
+      "mileage_km": 78500,
+      "owner": "Client Particulier",
+      "engine": "1.3 TURBO 136ch",
+      "fuel_type": "Essence",
+      "transmission": "Dual clutch 7 rapports",
+      "history": [
+        {"date": "2023-09-12", "mileage_km": 65000, "intervention": "Entretien Mercedes Service A : remplacement filtre à air, filtre à carburant, vidange huile.", "technician_id": "TECH_03"}
+      ],
+      "open_claims": []
+    },
+    "WAUZZZ8V3KA567890": {
+      "vin": "WAUZZZ8V3KA567890",
+      "brand": "Audi",
+      "model": "Audi A1 Sportback 30 TFSI",
+      "year": 2021,
+      "mileage_km": 52000,
+      "owner": "Client Particulier",
+      "engine": "1.5 TFSI 150ch",
+      "fuel_type": "Essence",
+      "transmission": "DSG 7 rapports",
+      "history": [
+        {"date": "2024-02-20", "mileage_km": 48000, "intervention": "Contrôle électronique MMI et système audio Burmester.", "technician_id": "TECH_01"}
+      ],
+      "open_claims": []
+    },
+    "WDD2130621A987654": {
+      "vin": "WDD2130621A987654",
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Benz Classe CLA 200",
+      "year": 2021,
+      "mileage_km": 63000,
+      "owner": "Client Particulier",
+      "engine": "1.3 TURBO 163ch",
+      "fuel_type": "Essence",
+      "transmission": "Dual clutch 7 rapports",
+      "history": [
+        {"date": "2023-12-05", "mileage_km": 55000, "intervention": "Contrôle traction intégrale 4MATIC et différentiel arrière.", "technician_id": "TECH_05"}
+      ],
+      "open_claims": []
+    },
+    "WAUZZZ8V6KA234567": {
+      "vin": "WAUZZZ8V6KA234567",
+      "brand": "Audi",
+      "model": "Audi TT 45 TFSI",
+      "year": 2022,
+      "mileage_km": 18500,
+      "owner": "Client Particulier",
+      "engine": "2.0 TFSI 245ch",
+      "fuel_type": "Essence",
+      "transmission": "S-Tronic 7 rapports",
+      "history": [
+        {"date": "2024-03-28", "mileage_km": 15000, "intervention": "Service Audi Premium : vidange moteur 5W30, filtre à air, vérification freinage performance.", "technician_id": "TECH_01"}
+      ],
+      "open_claims": []
+    },
+    "YL1ZZZ1Y92J345678": {
+      "vin": "YL1ZZZ1Y92J345678",
+      "brand": "Renault",
+      "model": "Renault Zoé Q210",
+      "year": 2020,
+      "mileage_km": 82000,
+      "owner": "Client Particulier",
+      "engine": "Moteur électrique 110ch",
+      "fuel_type": "Électrique 100% (41 kWh)",
+      "transmission": "Automatique 1 vitesse",
+      "history": [
+        {"date": "2023-07-15", "mileage_km": 70000, "intervention": "Contrôle batterie 400V et état de santé (SOH). Mise à niveau software BMS.", "technician_id": "TECH_09"}
+      ],
+      "open_claims": []
+    },
+    "VF7SC8HF0EW123456": {
+      "vin": "VF7SC8HF0EW123456",
+      "brand": "Citroën",
+      "model": "Citroën C5 X 1.5 BlueHDi",
+      "year": 2021,
+      "mileage_km": 71000,
+      "owner": "Client Particulier",
+      "engine": "1.5 BlueHDi 130ch",
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle 8 rapports",
+      "history": [
+        {"date": "2024-01-22", "mileage_km": 65000, "intervention": "Contrôle suspension Hydropneumatique et vérification niveau liquide.", "technician_id": "TECH_11"}
+      ],
+      "open_claims": []
+    }
+  },
+  "created_estimates": [
+    {"estimate_id": "EST-A1B2C3D4", "vin": "VF3CC8HR0ES123456", "title": "Remplacement filtre habitacle", "description": "Filtre cabine pollen", "estimated_cost": 45.0, "approved_by_role": "expert_valideur", "approval_token": "APP-998877", "idempotency_key": "IDEMP-112233", "status": "validated", "created_at": "2024-10-15T14:30:00"}
+  ]
+}

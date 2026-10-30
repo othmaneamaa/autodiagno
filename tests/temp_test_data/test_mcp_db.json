@@ -1,0 +1,50 @@
+{
+  "vehicles": {
+    "VF3CC8HR0ES123456": {
+      "vin": "VF3CC8HR0ES123456",
+      "model": "Peugeot 208 1.2 PureTech",
+      "mileage_km": 48500,
+      "history": [
+        {
+          "date": "2023-11-15",
+          "intervention": "Entretien annuel complet"
+        }
+      ]
+    }
+  },
+  "created_estimates": [
+    {
+      "estimate_id": "EST-E6B4D545",
+      "vin": "VF3CC8HR0ES123456",
+      "title": "Remplacement filtre habitacle",
+      "description": "Intervention préventive",
+      "estimated_cost": 65.0,
+      "approved_by_role": "expert_valideur",
+      "approval_token": "APP-VALID-123",
+      "idempotency_key": "IDEMP-TEST-a4f60a",
+      "status": "validated"
+    },
+    {
+      "estimate_id": "EST-14B17BA2",
+      "vin": "VF3CC8HR0ES123456",
+      "title": "Remplacement filtre habitacle",
+      "description": "Intervention préventive",
+      "estimated_cost": 65.0,
+      "approved_by_role": "expert_valideur",
+      "approval_token": "APP-VALID-123",
+      "idempotency_key": "IDEMP-TEST-5e9a36",
+      "status": "validated"
+    },
+    {
+      "estimate_id": "EST-590997A2",
+      "vin": "VF3CC8HR0ES123456",
+      "title": "Remplacement filtre habitacle",
+      "description": "Intervention préventive",
+      "estimated_cost": 65.0,
+      "approved_by_role": "expert_valideur",
+      "approval_token": "APP-VALID-123",
+      "idempotency_key": "IDEMP-TEST-1c5644",
+      "status": "validated"
+    }
+  ]
+}

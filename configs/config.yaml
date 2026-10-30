@@ -1,0 +1,36 @@
+app:
+  name: "AutoClaim"
+  version: "1.0.0"
+  description: "Assistant multimodal et agentique pour le diagnostic automobile"
+
+models:
+  vlm: "Qwen/Qwen2.5-VL-7B-Instruct"
+  text_embedding: "BAAI/bge-m3"
+  clip_model: "openai/clip-vit-base-patch32"
+  reranker_base: "BAAI/bge-reranker-base"
+  reranker_finetuned_path: "./models/reranker_finetuned"
+
+vector_db:
+  host: "localhost"
+  port: 6333
+  collection_manuals: "car_manuals_multimodal"
+
+budgets:
+  max_mcp_calls_per_turn: 3
+  max_model_calls_per_turn: 6
+  timeout_seconds: 60
+  max_image_size_mb: 10
+  max_tokens_generated: 1500
+
+security:
+  jwt_secret: "autoclaim-super-secret-key-change-in-production"
+  jwt_algorithm: "HS256"
+  token_expire_minutes: 120
+  allowed_equipment_families:
+    - "systeme_freinage_liaisons_au_sol"
+    - "groupe_motopropulseur_electronique"
+
+mcp_server:
+  host: "localhost"
+  port: 8001
+  db_path: "./data/synthetic/mcp_database.json"

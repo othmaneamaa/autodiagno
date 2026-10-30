@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+env.bak/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Configs sensibles
+config/.env
+config/.secrets
+*.key
+*.pem
+credentials.json
+config/credentials.json
+
+# Data (optionnel: commenter si vous voulez garder les données de test)
+# data/
+# tests/data/
+
+# Documentation build
+docs/_build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
