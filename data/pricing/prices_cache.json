@@ -1,0 +1,538 @@
+{
+  "refresh_date": "2026-11-06T17:20:00.000000",
+  "refresh_type": "daily",
+  "queries": {
+    "systeme_freinage_liaisons_au_sol frein": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Plaquettes de frein avant Bosch",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 220.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Disques de frein avant Textar (Paire)",
+        "product_brand": "Textar",
+        "product_category": "Freinage",
+        "price_mad": 580.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Étrier de frein avant TRW",
+        "product_brand": "TRW",
+        "product_category": "Freinage",
+        "price_mad": 950.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "systeme_freinage_liaisons_au_sol plaquettes": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Plaquettes frein avant Bosch QuietCast",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 240.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Plaquettes frein avant Ferodo DS Performance",
+        "product_brand": "Ferodo",
+        "product_category": "Freinage",
+        "price_mad": 350.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Plaquettes frein avant Brembo Sport",
+        "product_brand": "Brembo",
+        "product_category": "Freinage",
+        "price_mad": 380.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Plaquettes frein avant Textar T4000",
+        "product_brand": "Textar",
+        "product_category": "Freinage",
+        "price_mad": 210.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "systeme_freinage_liaisons_au_sol disques": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Disque frein avant Brembo 280mm (Paire)",
+        "product_brand": "Brembo",
+        "product_category": "Freinage",
+        "price_mad": 680.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Disque frein avant Zimmermann CoatZ (Paire)",
+        "product_brand": "Zimmermann",
+        "product_category": "Freinage",
+        "price_mad": 620.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Disque frein avant ATE Original (Paire)",
+        "product_brand": "ATE",
+        "product_category": "Freinage",
+        "price_mad": 650.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Disque frein avant TRW 280x22mm (Paire)",
+        "product_brand": "TRW",
+        "product_category": "Freinage",
+        "price_mad": 590.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "systeme_freinage_liaisons_au_sol etrier": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Étrier frein avant TRW neuf",
+        "product_brand": "TRW",
+        "product_category": "Freinage",
+        "price_mad": 980.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Étrier frein avant Bosch 098647",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 1100.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Étrier frein avant ATE 24.3700",
+        "product_brand": "ATE",
+        "product_category": "Freinage",
+        "price_mad": 1050.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "systeme_freinage_liaisons_au_sol abs": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Capteur ABS avant Bosch 026500",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 180.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Capteur ABS roue TRW 245001",
+        "product_brand": "TRW",
+        "product_category": "Freinage",
+        "price_mad": 165.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Unité hydraulique ABS Bosch 5.7",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 4200.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": false,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "systeme_freinage_liaisons_au_sol liquide": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Liquide frein DOT 4 Bosch 1L",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 45.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Liquide frein DOT 4 ATE 1L",
+        "product_brand": "ATE",
+        "product_category": "Freinage",
+        "price_mad": 52.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique batterie": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Batterie automobile 60Ah Varta Blue Dynamic",
+        "product_brand": "Varta",
+        "product_category": "Électrique",
+        "price_mad": 1050.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Alternateur 12V 120A Delco Remy",
+        "product_brand": "Delco Remy",
+        "product_category": "Moteur",
+        "price_mad": 2100.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Batterie automobile 70Ah Yuasa YBX",
+        "product_brand": "Yuasa",
+        "product_category": "Électrique",
+        "price_mad": 1250.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique alternateur": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Alternateur 12V 120A Bosch 012452",
+        "product_brand": "Bosch",
+        "product_category": "Moteur",
+        "price_mad": 2350.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Alternateur 12V 150A Valeo 438437",
+        "product_brand": "Valeo",
+        "product_category": "Moteur",
+        "price_mad": 2750.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Alternateur 12V 120A Denso 104210",
+        "product_brand": "Denso",
+        "product_category": "Moteur",
+        "price_mad": 2500.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique bougies": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Bougies allumage NGK Laser Iridium (x4)",
+        "product_brand": "NGK",
+        "product_category": "Allumage",
+        "price_mad": 380.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Bougies allumage Bosch Super Plus (x4)",
+        "product_brand": "Bosch",
+        "product_category": "Allumage",
+        "price_mad": 240.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Bougies allumage Denso Iridium Power (x4)",
+        "product_brand": "Denso",
+        "product_category": "Allumage",
+        "price_mad": 420.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique demarreur": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Démarreur 12V 2.0kW Bosch 000110",
+        "product_brand": "Bosch",
+        "product_category": "Moteur",
+        "price_mad": 1850.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Démarreur 12V 2.2kW Valeo 433184",
+        "product_brand": "Valeo",
+        "product_category": "Moteur",
+        "price_mad": 1950.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique adblue": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "AdBlue 10L Yara Air1",
+        "product_brand": "Yara",
+        "product_category": "Dépollution",
+        "price_mad": 85.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "AdBlue 10L GreenChem",
+        "product_brand": "GreenChem",
+        "product_category": "Dépollution",
+        "price_mad": 78.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Pompe AdBlue SCR Bosch 044402",
+        "product_brand": "Bosch",
+        "product_category": "Dépollution",
+        "price_mad": 3200.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": false,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique surchauffe": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Calorstat 88°C Gates TH345",
+        "product_brand": "Gates",
+        "product_category": "Refroidissement",
+        "price_mad": 145.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Pompe à eau Gates WP3456",
+        "product_brand": "Gates",
+        "product_category": "Refroidissement",
+        "price_mad": 420.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Vase expansion liquide refroidissement",
+        "product_brand": "Valeo",
+        "product_category": "Refroidissement",
+        "price_mad": 280.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Moto-ventilateur refroidissement 12V",
+        "product_brand": "Valeo",
+        "product_category": "Refroidissement",
+        "price_mad": 850.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "systeme_freinage_liaisons_au_sol frein renault clio 4": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Plaquettes frein avant Clio 4 Bosch 098649",
+        "product_brand": "Bosch",
+        "product_category": "Freinage",
+        "price_mad": 210.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Disques frein avant Clio 4 280mm Zimmermann (Paire)",
+        "product_brand": "Zimmermann",
+        "product_category": "Freinage",
+        "price_mad": 580.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Kit plaquettes + disques Clio 4 TRW",
+        "product_brand": "TRW",
+        "product_category": "Freinage",
+        "price_mad": 750.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ],
+    "groupe_motopropulseur_electronique batterie renault clio 4": [
+      {
+        "site_name": "Autops",
+        "site_url": "https://www.autops.ma",
+        "product_name": "Batterie 60Ah 540A Clio 4 Varta D59",
+        "product_brand": "Varta",
+        "product_category": "Électrique",
+        "price_mad": 980.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      },
+      {
+        "site_name": "Cartec",
+        "site_url": "https://www.cartec.ma",
+        "product_name": "Batterie 60Ah Clio 4 Yuasa YBX5000",
+        "product_brand": "Yuasa",
+        "product_category": "Électrique",
+        "price_mad": 950.00,
+        "currency": "MAD",
+        "last_updated": "2026-11-06",
+        "in_stock": true,
+        "scrape_timestamp": "2026-11-06T17:20:00.000000"
+      }
+    ]
+  }
+}

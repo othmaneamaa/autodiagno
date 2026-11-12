@@ -26,6 +26,17 @@ class ProposedAction(BaseModel):
     approval_token: Optional[str] = Field(default=None, description="Jeton unique d'approbation humaine")
     idempotency_key: Optional[str] = Field(default=None, description="Clé d'idempotence anti-doublon")
 
+class PartPriceInfo(BaseModel):
+    """Informations de prix d'une pièce auto extraites du scraping."""
+    site_name: str = Field(description="Nom du site d'où provient le prix")
+    product_name: str = Field(description="Nom de la pièce")
+    product_brand: str = Field(description="Marque de la pièce")
+    product_category: str = Field(description="Catégorie de la pièce")
+    price_mad: float = Field(description="Prix en MAD")
+    currency: str = Field(default="MAD", description="Devise")
+    site_url: Optional[str] = Field(default=None, description="Lien vers le produit")
+
+
 class AutoClaimOutput(BaseModel):
     """Structure de réponse finale standardisée et validée."""
     status: Literal["success", "needs_clarification", "action_required", "refused", "error"] = Field(
@@ -55,6 +66,9 @@ class AutoClaimOutput(BaseModel):
     estimated_labor_minutes: Optional[int] = Field(default=None, description="Temps main-d'œuvre estimé en minutes (LLM)")
     parts_needed: List[str] = Field(default_factory=list, description="Pièces nécessaires (LLM)")
     difficulty_level: Optional[str] = Field(default=None, description="Niveau difficulté: Facile|Moyen|Difficile|Expert (LLM)")
+    # Nouveau: Prix des pièces en temps réel
+    part_prices: List[PartPriceInfo] = Field(default_factory=list, description="Liste des prix des pièces extraites du scraping")
+    total_parts_cost_mad: Optional[float] = Field(default=None, description="Coût total des pièces en MAD")
 
 class UserContext(BaseModel):
     """Contexte d'authentification et de permissions de l'utilisateur."""

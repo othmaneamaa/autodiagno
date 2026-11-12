@@ -13,6 +13,7 @@ from src.agent.nodes import (
     node_rerank_sources,
     node_consult_mcp_history,
     node_synthesize_and_verify,
+    node_fetch_part_prices,
     node_execute_mcp_action
 )
 
@@ -26,6 +27,7 @@ def build_autoclaim_graph():
     workflow.add_node("retrieve_sources", node_retrieve_sources)
     workflow.add_node("rerank_sources", node_rerank_sources)
     workflow.add_node("consult_mcp_history", node_consult_mcp_history)
+    workflow.add_node("fetch_part_prices", node_fetch_part_prices)
     workflow.add_node("synthesize_and_verify", node_synthesize_and_verify)
     workflow.add_node("execute_mcp_action", node_execute_mcp_action)
 
@@ -48,6 +50,7 @@ def build_autoclaim_graph():
     workflow.add_edge("retrieve_sources", "rerank_sources")
     workflow.add_edge("rerank_sources", "consult_mcp_history")
     workflow.add_edge("consult_mcp_history", "synthesize_and_verify")
+    workflow.add_edge("synthesize_and_verify", "fetch_part_prices")
 
     # Branche après synthèse : Si validation humaine demandée et déjà approuvée
     def route_after_synthesis(state: AgentState):

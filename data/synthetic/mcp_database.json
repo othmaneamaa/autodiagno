@@ -320,6 +320,22 @@
         {"date": "2024-01-22", "mileage_km": 65000, "intervention": "Contrôle suspension Hydropneumatique et vérification niveau liquide.", "technician_id": "TECH_11"}
       ],
       "open_claims": []
+    },
+    "VF1RZJ00H56123456": {
+      "vin": "VF1RZJ00H56123456",
+      "brand": "Renault",
+      "model": "Renault Clio 4 1.5 dCi",
+      "year": 2018,
+      "mileage_km": 112000,
+      "owner": "Client Particulier",
+      "engine": "1.5 dCi 90ch",
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle 5 rapports",
+      "history": [
+        {"date": "2023-03-15", "mileage_km": 95000, "intervention": "Entretien annuel : vidange huile 5W30, filtres huile/habitacle/carburant, contrôle freinage.", "technician_id": "TECH_04"},
+        {"date": "2024-01-20", "mileage_km": 105000, "intervention": "Remplacement courroie accessoire et galet tendeur.", "technician_id": "TECH_02"}
+      ],
+      "open_claims": []
     }
   },
   "created_estimates": [

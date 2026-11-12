@@ -10,11 +10,12 @@ Vérifier les accès -> Analyser la demande et l'image -> Rechercher les sources
 import uuid
 from typing import Dict, Any
 from src.schemas.state import AgentState
-from src.schemas.pydantic_models import Citation, ProposedAction, AutoClaimOutput
+from src.schemas.pydantic_models import Citation, ProposedAction, AutoClaimOutput, PartPriceInfo
 from src.ingestion.vector_indexer import indexer
 from src.reranker.reranker_service import reranker
 from src.mcp_server.server import mcp_service
 from src.agent.guardrails import guardrails
+from src.pricing.service import pricing_service
 
 # Intégration LLM OmniRoute pour enrichissement (YouTube + explications techniques)
 try:
@@ -223,7 +224,7 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
                 equipment_family="systeme_freinage_liaisons_au_sol",
                 title="Contrôle pression pneumatiques, recherche de fuite et étalonnage TPMS",
                 description="Contrôle visuel bande de roulement, recherche de perforation et réinitialisation de la calibration TPMS.",
-                estimated_cost=40.0,
+                estimated_cost=120.0,  # MAD
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
@@ -241,7 +242,7 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
                 equipment_family="groupe_motopropulseur_electronique",
                 title="Contrôle circuit de charge, tension alternateur et test batterie",
                 description="Contrôle de la tension débitée par l'alternateur et vérification de la tension de la courroie d'accessoires.",
-                estimated_cost=65.0,
+                estimated_cost=180.0,  # MAD
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
@@ -259,7 +260,7 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
                 equipment_family="groupe_motopropulseur_electronique",
                 title="Diagnostic circuit de refroidissement, test moto-ventilateur et purge LDR",
                 description="Recherche de fuite circuit liquide de refroidissement, test du calorstat et sonde de température.",
-                estimated_cost=95.0,
+                estimated_cost=280.0,  # MAD
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
@@ -277,7 +278,7 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
                 equipment_family="groupe_motopropulseur_electronique",
                 title="Remplissage réservoir AdBlue et réinitialisation compteur SCR",
                 description="Appoint liquide AdBlue conforme norme ISO 22241 et réinitialisation de l'indicateur d'autonomie au combiné.",
-                estimated_cost=55.0,
+                estimated_cost=160.0,  # MAD
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
@@ -295,25 +296,53 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
                 equipment_family="systeme_freinage_liaisons_au_sol",
                 title="Diagnostic électronique système ABS et contrôle capteurs de vitesse de roue",
                 description="Lecture des codes défauts du calculateur ABS et contrôle de l'entrefer des capteurs de roue avant/arrière.",
-                estimated_cost=110.0,
+                estimated_cost=320.0,  # MAD
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
 
-    # 6. Freins / Plaquettes
+    # 6. Freins / Plaquettes - Distinguer usure critique vs bruit métallique
     elif visual_category == "frein_plaquette" or "frein" in combined_context or "plaquette" in combined_context or "usure" in combined_context or (top_chunk and any(k in top_chunk["title"].lower() for k in ["plaquette", "frein", "usure"])):
-        answer_text = (
-            "L'observation visuelle et la documentation technique Bosch indiquent une cote d'usure inférieure au seuil critique de 2,0 mm. "
-            "Le remplacement du jeu de plaquettes avant est obligatoire pour garantir l'efficacité du freinage et préserver les disques."
-        )
+        # Analyser le type de problème : usure visuelle vs bruit
+        has_visual_wear = visual_category == "frein_plaquette" or "usure" in combined_context or "garniture" in combined_context or "épaisseur" in combined_context
+        has_noise_complaint = any(k in combined_context for k in ["bruit", "grincement", "claquement", "métallique", "frottement", "sifflement"])
+
+        if has_visual_wear and not has_noise_complaint:
+            # Cas 1 : Usure visuelle confirmée (image + mots-clés usure)
+            answer_text = (
+                "L'observation visuelle et la documentation technique Bosch indiquent une cote d'usure inférieure au seuil critique de 2,0 mm. "
+                "Le remplacement du jeu de plaquettes avant est obligatoire pour garantir l'efficacité du freinage et préserver les disques."
+            )
+            estimated_cost_mad = 450.0  # ~185€ * 2.4 ≈ 444 MAD, arrondi
+        elif has_noise_complaint:
+            # Cas 2 : Bruit métallique - diagnostic différentiel
+            answer_text = (
+                "Un bruit métallique au freinage avant peut avoir plusieurs causes : "
+                "(1) Indicateur d'usure plaquettes (lame métallique) touchant le disque — usure critique, remplacement immédiat ; "
+                "(2) Disques rainurés/creusés par usure antérieure — rectification ou remplacement ; "
+                "(3) Étrier grippé ou guidages secs — graissage/révision étrier ; "
+                "(4) Corps étranger (pierre) coincé — retrait ; "
+                "(5) Plaquettes vitrifiées (surchauffe) — rodage ou remplacement. "
+                "Un contrôle visuel de l'épaisseur garniture, état surface disque, et coulissement étrier est requis pour trancher."
+            )
+            estimated_cost_mad = 550.0  # Diagnostic + remplacement potentiel
+        else:
+            # Cas 3 : Frein générique
+            answer_text = (
+                "Contrôle du système de freinage avant recommandé : épaisseur plaquettes (seuil 2mm), "
+                "état surface disques (rainures, fissures), coulissement étrier, niveau liquide frein. "
+                "Suivre procédure constructeur pour couples de serrage."
+            )
+            estimated_cost_mad = 350.0
+
         if state.vin:
             proposed_action = ProposedAction(
                 action_type="create_repair_estimate",
                 vin=state.vin,
                 equipment_family="systeme_freinage_liaisons_au_sol",
-                title="Remplacement du jeu de plaquettes de frein avant",
-                description="Remplacement préventif et sécuritaire des plaquettes avant suite à usure critique constatée.",
-                estimated_cost=185.0,
+                title="Diagnostic et intervention freinage avant (bruit / usure)",
+                description=answer_text[:200] + "...",
+                estimated_cost=estimated_cost_mad,
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
@@ -332,7 +361,7 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
                 equipment_family="groupe_motopropulseur_electronique",
                 title="Diagnostic valise électronique et contrôle circuit d'injection",
                 description="Contrôle approfondi suite à allumage voyant MIL. Analyse codes DTC et contrôle capteurs.",
-                estimated_cost=120.0,
+                estimated_cost=350.0,  # MAD
                 approval_token=f"APP-{uuid.uuid4().hex[:6].upper()}",
                 idempotency_key=f"IDEMP-{uuid.uuid4().hex[:8].upper()}"
             )
@@ -389,6 +418,37 @@ def node_synthesize_and_verify(state: AgentState) -> Dict[str, Any]:
         "draft_action": proposed_action,
         "budget_model_calls": state.budget_model_calls + 1
     }
+
+
+def node_fetch_part_prices(state: AgentState) -> Dict[str, Any]:
+    """Étape 6.5 : Récupération des prix des pièces depuis les sites marocains (scraping)."""
+    if state.final_output is None:
+        return {}
+
+    equipment_family = state.draft_action.equipment_family if state.draft_action else ""
+
+    # Récupérer les prix depuis le cache (rafraîchi quotidiennement)
+    try:
+        part_prices = pricing_service.get_cached_prices(state.query, equipment_family)
+
+        # Calculer le coût total
+        total_cost = pricing_service.calculate_total_cost(part_prices)
+
+        # Mettre à jour le final_output avec les prix
+        updated_output = state.final_output.model_copy(update={
+            "part_prices": part_prices,
+            "total_parts_cost_mad": total_cost["total_mad"]
+        })
+
+        return {
+            "final_output": updated_output,
+            "part_prices": part_prices,
+            "total_parts_cost_mad": total_cost["total_mad"]
+        }
+    except Exception as e:
+        print(f"[Pricing] Erreur récupération prix: {e}")
+        return {}
+
 
 def node_execute_mcp_action(state: AgentState) -> Dict[str, Any]:
     """Étape 7 : Exécution finale du devis via MCP après approbation humaine."""
