@@ -1,4 +1,4 @@
-# 🚗 AutoClaim : Assistant Multimodal et Agentique pour le Diagnostic Automobile
+# 🚗 AutoDiag : Assistant Multimodal et Agentique pour le Diagnostic Automobile
 
 Projet intégrateur d'IA Générative Multimodale conforme aux spécifications du document de référence **MAINTIDOC**.
 
